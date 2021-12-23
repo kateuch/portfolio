@@ -1,0 +1,29 @@
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-family: "Poppins";
+  transition: all 0.3s ease;
+  color: #222;
+  position: relative;
+}
+.nav ul {
+  margin: 0;
+  list-style-type: none;
+}
+.nav ul li {
+  margin: 0 25px 0 0;
+  display: inline-block;
+}
+
+.nav {
+  width: auto;
+  border: 1px solid;
+  background-color: wheat;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav li {
+  margin: 0 25px 0 0;
+  display: inline-block;
+}

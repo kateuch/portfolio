@@ -1,0 +1,14 @@
+.item {
+    height: auto;
+    width: 250px;
+    background-color: papayawhip;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+}

@@ -1,0 +1,34 @@
+
+.demo {
+  background-color: #fff;
+  .demoContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    .title {
+      background: transparent;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      outline: none;
+      h3 {
+      font-weight: 800;
+      font-family: "Poppins";
+      }
+    }
+    .list {
+      border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      @media screen and (max-width: 774px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
+
