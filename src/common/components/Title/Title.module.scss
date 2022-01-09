@@ -1,0 +1,6 @@
+@import '../../styles/sass/mixins.scss';
+@import '../../styles/sass/variables.scss';
+
+.title h3{
+@include text (800, 30px, $textColor);
+}

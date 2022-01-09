@@ -1,4 +1,5 @@
-import Card from "../common/Card";
+import Card from "../common/components/Card/Card";
+import Title from "../common/components/Title/Title";
 import style from "./Demo.module.scss";
 import Project from "./Project";
 
@@ -6,9 +7,7 @@ const Demo = () => {
   return (
     <div className={style.demo}>
       <Card className={style.demoContainer}>
-      <div className={style.title}>
-              <h3>Portfolio</h3>
-          </div>
+        <Title title={'Portfolio'}/>
           <div className={style.list}>
           <Project title={'title'} description={'description'}/>
           <Project  title={'title'} description={'description'}/>

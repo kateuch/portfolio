@@ -1,14 +1,13 @@
-import style from './Contacts.module.css';
+import style from './Contacts.module.scss';
 import Form from './form/Form';
-import Card from '../common/Card';
+import Card from "../common/components/Card/Card";
+import Title from '../common/components/Title/Title';
 
 const Contacts = () => {
     return (
         <div className={style.contacts}>
         <Card className={style.contactsContainer}>
-            <div className={style.title}>
-                <h3>Contact</h3>
-                </div>
+            <Title title={'Contact'}/>
             <Form />
         </Card>
         </div>

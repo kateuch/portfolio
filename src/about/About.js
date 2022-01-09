@@ -1,5 +1,5 @@
-import Card from "../common/Card";
-import style from "./About.module.css";
+import style from "./About.module.scss";
+import Card from "../common/components/Card/Card";
 
 const About = () => {
   return (

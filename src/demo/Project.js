@@ -4,9 +4,11 @@ const Project = (props) => {
   return(
   <div className={style.project}>
     <div className={style.icon}></div>
-    <div>
-      <h2 className={style.title}>{props.title}</h2>
-      <h2 className={style.description}>{props.description}</h2>
+    <div className={style.title}>
+      <h3 >
+        <a href=''>{props.title}</a>
+        </h3>
+      <span className={style.description}>{props.description}</span>
     </div>
   </div>
   )

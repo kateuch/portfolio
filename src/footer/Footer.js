@@ -1,5 +1,5 @@
-import Card from "../common/Card";
-import style from "./Footer.module.css";
+import Card from "../common/components/Card/Card";
+import style from "./Footer.module.scss";
 
 const Footer = () => {
   return (

@@ -5,10 +5,12 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+
+    .icon {
+        height: 100px;
+        width: 100px;
+        background-color: grey;
+    }
 }
 
-.icon {
-    height: 100px;
-    width: 100px;
-    background-color: grey;
-}
+

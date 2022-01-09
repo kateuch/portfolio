@@ -1,13 +1,17 @@
-@import "../common/styles/sass/variables.scss";
 @import "../common/styles/sass/mixins.scss";
+@import "../common/styles/sass/variables.scss";
 
-.demo {
-  background-color: $secondBackgroundColor;
-  .demoContainer {
+.skillbox {
+  background-color: $firstBackgroundColor;
+
+  .skillboxContainer {
     @include flexContainer();
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
     .list {
       @include content();
+      justify-content: space-between;
+
       @media screen and (max-width: 774px) {
         justify-content: center;
       }

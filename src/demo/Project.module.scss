@@ -1,15 +1,34 @@
-.project {
-    height: auto;
-    max-width: 250px;
-    background-color: rosybrown;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3px;
-    .icon {
-        height: 100px;
-        width: 200px;
-        background-color: grey;
-    }
-}
+@import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins.scss";
 
+.project {
+  @include flexContainer();
+  height: auto;
+  max-width: 250px;
+  background-color: rosybrown;
+  margin: 3px;
+
+  .icon {
+    height: 100px;
+    width: 200px;
+    background-color: grey;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    h3 {
+      @include text(600, 18px, $textColor);
+      a {
+        text-decoration: none;
+        color: $textColor;
+        // position: relative;
+      }
+    }
+    span {
+      @include text(500, 15px, $textColor);
+      line-height: 30px;
+      word-wrap: break-word;
+    }
+  }
+}

@@ -1,14 +1,13 @@
-import Card from "../common/Card";
 import Skill from "./Skill";
-import style from "./SkillBox.module.css";
+import style from "./SkillBox.module.scss";
+import Card from "../common/components/Card/Card";
+import Title from "../common/components/Title/Title";
 
 const SkillBox = () => {
   return (
     <div className={style.skillbox}>
       <Card className={style.skillboxContainer}>
-          <div className={style.title}>
-              <h3>Skills</h3>
-          </div>
+          <Title title={'Skills'}/>
           <div className={style.list}>
           <Skill title={"JS"}/>
           <Skill title={"CSS"}/>

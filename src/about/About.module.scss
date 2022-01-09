@@ -1,0 +1,36 @@
+@import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins.scss";
+
+.about {
+  background-color: $secondBackgroundColor;
+}
+
+.aboutContainer {
+  @include flexContainer();
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .iconBlock {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    background-color: grey;
+  }
+  .description {
+    @include content();
+    justify-content: space-evenly;
+    .text {
+      max-width: 55%;
+      margin-bottom: 35px;
+      p {
+        @include text(400, 15px, #767676);
+        line-height: 30px;
+        font-family: "Mulish";
+        font-style: italic;
+      }
+    }
+    .personalData {
+      max-width: 100%;
+    }
+  }
+}

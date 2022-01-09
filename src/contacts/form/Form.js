@@ -1,5 +1,4 @@
-import styles from "./Form.module.css";
-import Card from "../../common/Card";
+import styles from "./Form.module.scss";
 
 const Form = () => {
   return (

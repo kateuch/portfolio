@@ -1,0 +1,26 @@
+// @import './variables.scss';
+
+@mixin text  ($fontWeight, $fontSize, $textColor) {
+        color: $textColor;
+        font-weight: $fontWeight;
+        font-family: "Poppins";
+        line-height: 1.4;
+        font-size: $fontSize;
+        letter-spacing: .5px;
+        }
+
+
+@mixin flexContainer () {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@mixin content() {
+    border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+}
