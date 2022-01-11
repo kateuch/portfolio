@@ -9,6 +9,7 @@ const Home = () => {
         <div className={style.greatings}>
           <h3>EKATERINA UCHAYKINA </h3>
           <p>Frontend-developer based in Moscow</p>
+          <div>
           <ul className={style.social}>
             <li>
               <a
@@ -68,6 +69,7 @@ const Home = () => {
               </a>
             </li>
           </ul>
+          </div>
         </div>
         <div className={style.icon}></div>
       </Card>

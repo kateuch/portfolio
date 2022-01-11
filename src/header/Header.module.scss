@@ -6,17 +6,9 @@
     @include content();
      width:auto;
     height: 80px;
-    // border: 1px solid;
     background-color: $secondBackgroundColor;
-    // display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-// @mixin content() {
-//     border: 1px solid;
-//       width: 100%;
-//       display: flex;
-//       justify-content: center;
-//       flex-wrap: wrap;
