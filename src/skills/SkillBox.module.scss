@@ -2,18 +2,20 @@
 @import "../common/styles/sass/variables.scss";
 
 .skillbox {
+  min-height: 50vh;
   background-color: $firstBackgroundColor;
 
   .skillboxContainer {
     @include flexContainer();
     flex-wrap: wrap;
 
+
     .list {
       @include content();
-      justify-content: space-between;
-
+      justify-content: space-around;
+      gap: 7px;
       @media screen and (max-width: 774px) {
-        justify-content: center;
+        justify-content: space-evenly;
       }
     }
   }

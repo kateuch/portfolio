@@ -9,9 +9,17 @@ const SkillBox = () => {
       <Card className={style.skillboxContainer}>
           <Title title={'Skills'}/>
           <div className={style.list}>
-          <Skill title={"JS"}/>
+          <Skill title={'Javascript'}/>
           <Skill title={"CSS"}/>
-          <Skill title={"HTML"}/>
+          <Skill title={"Typescript"}/>
+          <Skill title={"Storybook"}/>
+          <Skill title={"Jest"}/>
+          <Skill title={"Material-UI"}/>
+          <Skill title={"Sass/Scss"}/>
+          <Skill title={"React"}/>
+          <Skill title={"Redux"}/>
+          <Skill title={"Next.js"}/>
+          <Skill title={"MongoDB"}/>
           </div>
       </Card>
     </div>

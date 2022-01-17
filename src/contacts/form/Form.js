@@ -13,7 +13,7 @@ const Form = () => {
         </li>
       </ul>
 </div>
-      <div>
+      <div className={styles.message}>
         <textarea id="message" placeholder="Message" />
       </div>
       <div>

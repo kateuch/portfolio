@@ -1,4 +1,3 @@
-import About from './about/About';
 import './App.module.css';
 import Contacts from './contacts/Contacts';
 import Demo from './demo/Demo';
@@ -12,7 +11,7 @@ function App() {
     <>
     <Header />
     <Home />
-    <About />
+    {/* <About /> */}
     <SkillBox/>
     <Demo />
     <Contacts/>

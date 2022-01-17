@@ -1,6 +1,9 @@
 import style from "./Home.module.scss";
 import Card from "../common/components/Card/Card";
-
+import image from '../assets/image/IMG_20211224_180511.jpg';
+import facebook from '../assets/image/fb.svg';
+import link from '../assets/image/linkedin.svg';
+import flickr from '../assets/image/flickr.svg';
 
 const Home = () => {
   return (
@@ -17,61 +20,39 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  class="svg"
-                  src="/assets/img/svg/social/facebook.svg"
-                  alt="social"
-                />
+                <img className={style.svg} src={facebook} alt="social"/>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+              <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
                 <img
-                  class="svg"
-                  src="/assets/img/svg/social/twitter.svg"
+                  className={style.svg}
+                  src={link}
                   alt="social"
                 />
               </a>
             </li>
             <li>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.flickr.com/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img
-                  class="svg"
-                  src="/assets/img/svg/social/instagram.svg"
+                  className={style.svg}
+                  src={flickr}
                   alt="social"
                 />
               </a>
             </li>
-            <li>
-              <a href="https://dribbble.com/" target="_blank" rel="noreferrer">
-                <img
-                  class="svg"
-                  src="/assets/img/svg/social/dribbble.svg"
-                  alt="social"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tiktok.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  class="svg"
-                  src="/assets/img/svg/social/tik-tok.svg"
-                  alt="social"
-                />
-              </a>
-            </li>
+
           </ul>
           </div>
         </div>
-        <div className={style.icon}></div>
+        {/* <div className={style.icon} style={{backgroundImage: `url(${image})`}}> */}
+        <div className={style.icon} >
+          <img src={image} alt="me" />
+        </div>
       </Card>
     </div>
   );

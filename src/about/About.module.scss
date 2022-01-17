@@ -6,32 +6,71 @@
 }
 
 .aboutContainer {
-  @include flexContainer();
-  justify-content: space-around;
-  flex-wrap: wrap;
+  height: auto;
+  clear: both;
+  display: flex;
+  align-items: center;
+
 
   .iconBlock {
-    width: 60%;
-    max-width: 1200px;
-    height: 500px;
-    background-color: grey;
+    width: 50%;
+    padding-right: 50px;
+
+    img {
+      width: 100%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+      border: 1px solid;
+      background-color: grey;
+      margin: 10px;
+      vertical-align: middle;
+      height: auto;
+    }
 
     @media screen and (max-width: 774px) {
       width: 100%;
     }
   }
+
   .description {
-    @include content();
-    justify-content: space-evenly;
+    width: 50%;
+    padding-left: 50px;
 
     @media screen and (max-width: 774px) {
       flex-direction: column;
       align-items: center;
     }
+    .title {
+      width: 100%;
+      height: auto;
+      clear: both;
+      float: left;
 
+      span {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.05);
+        text-transform: uppercase;
+        padding: 4px 10px;
+        font-weight: 600;
+        font-size: 12px;
+        color: #333;
+        font-family: "Poppins";
+        letter-spacing: 0;
+        margin-bottom: 15px;
+      }
+      h3 {
+        @include text (800, 30px, #000)
+      }
+    }
     .text {
-      max-width: 55%;
-      margin-bottom: 35px;
+
+      width: 100%;
+height: auto;
+clear: both;
+float: left;
+margin-bottom: 40px;
+padding-top: 27px;
+
+
       p {
         @include text(400, 15px, #767676);
         line-height: 30px;

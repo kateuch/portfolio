@@ -1,0 +1,65 @@
+
+@import '../../styles/sass/mixins.scss';
+
+//colors
+$red: #E1332D;
+$white: #fff;
+
+section {
+  display: flex;
+  justify-content: space-around;
+
+div {
+
+
+.button {
+  @include text (400, 15px, #767676);
+  text-align: center;
+  border: none;
+  padding: 4px;
+  box-shadow: 0 0 5px #dfdfdf;;
+  cursor: pointer;
+  display: block;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 80%;
+}
+.btn {
+  // border: 1px solid;
+  overflow: hidden;
+  position: relative;
+  span {
+    @include text (400, 15px, #767676);
+    z-index: 20;
+
+   }
+
+  &:before {
+    background-color: #d5d5d5;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 10;
+
+  }
+
+}
+
+.btn:hover {
+  &:before{
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+//button styles
+}}
