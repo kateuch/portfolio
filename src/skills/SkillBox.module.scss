@@ -10,10 +10,12 @@
     flex-wrap: wrap;
 
 
+
     .list {
       @include content();
       justify-content: space-around;
       gap: 7px;
+      border: 0;
       @media screen and (max-width: 774px) {
         justify-content: space-evenly;
       }

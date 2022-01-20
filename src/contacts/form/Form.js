@@ -11,13 +11,14 @@ const Form = () => {
         <li>
           <input type="text" id="email" placeholder="Email" />
         </li>
+        <li >
+        <textarea name="subject" placeholder="Message" />
+      </li>
       </ul>
 </div>
-      <div className={styles.message}>
-        <textarea id="message" placeholder="Message" />
-      </div>
-      <div>
-        <button className={styles.btn}>Send</button>
+
+      <div className={styles.button}>
+        <button className={styles.ibButton}>Send Message</button>
       </div>
     </form>
   );
