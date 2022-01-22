@@ -1,6 +1,6 @@
 import style from "./Home.module.scss";
 import Card from "../common/components/Card/Card";
-import image from '../assets/image/IMG_20211224_180511.jpg';
+import image from '../assets/image/photo.jpg';
 import facebook from '../assets/image/fb.svg';
 import link from '../assets/image/linkedin.svg';
 import flickr from '../assets/image/flickr.svg';
