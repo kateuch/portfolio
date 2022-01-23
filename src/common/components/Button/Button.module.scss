@@ -40,7 +40,7 @@ div {
    }
 
   &:before {
-    background-color: #d5d5d5;
+    background-color: #e7e6e6;
     content: "";
     height: 155px;
     left: -75px;
@@ -48,8 +48,8 @@ div {
     position: absolute;
     top: -50px;
     transform: rotate(35deg);
-    transition: all 650ms cubic-bezier(0.19, 1, 0.22, 1);
-    width: 50px;
+    transition: all 600ms cubic-bezier(0,0,.2,1);
+    width: 40px;
     z-index: 10;
 
   }
@@ -59,7 +59,7 @@ div {
 .btn:hover {
   &:before{
     left: 120%;
-    transition: all 650ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 600ms cubic-bezier(0,0,.2,1);
   }
 span {
   color: #000;

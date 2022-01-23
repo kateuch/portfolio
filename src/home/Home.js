@@ -7,7 +7,7 @@ import flickr from '../assets/image/flickr.svg';
 
 const Home = () => {
   return (
-    <div className={style.home}>
+    <div className={style.home} id={'home'}>
       <Card className={style.homeContainer}>
         <div className={style.greatings}>
           <h3>EKATERINA UCHAYKINA </h3>

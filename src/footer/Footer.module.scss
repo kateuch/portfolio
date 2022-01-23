@@ -1,38 +1,23 @@
 @import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins.scss";
 
 .footer {
     min-height: 30%;
-    background-color: $secondBackgroundColor ;
+    background-color: #000 ;
+
 
     .footerContainer{
-        justify-content: space-between;
+        text-align: center;
 
         .copyright {
+            @include text (400, 15px, #fff);
             margin-left: 5px;
         }
 
-        .listOfLinks {
-            display: flex;
-            justify-content: flex-end;
-            border: 1px solid rgb(255, 0, 115);
-
-        .link {
-            margin: 0 10px;
-
-            .icon{
-                width: 30px;
-                height: 30px;
-                border:lightgrey;
-                background-color: lightslategray;
-                margin: 1px;
-            }
-        }
-    }
-
-
-
 
     }
-
-
 }
+
+
+
+

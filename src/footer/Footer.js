@@ -1,24 +1,17 @@
 import Card from "../common/components/Card/Card";
 import style from "./Footer.module.scss";
 
+const data = new Date;
+const year = data.getFullYear();
+
 const Footer = () => {
   return (
     <div className={style.footer}>
       <Card className={style.footerContainer}>
-        <div className={style.copyright}>© 2021 by Ekaterina Uchaykina</div>
-        <div>
-        <ul className={style.listOfLinks}>
-          <li className={style.link}>
-            <div className={style.icon}></div>
-          </li>
-          <li className={style.link}>
-            <div className={style.icon}></div>
-          </li>
-          <li className={style.link}>
-            <div className={style.icon}></div>
-          </li>
-        </ul>
-        </div>
+        <div className={style.copyright}>
+          <p>© {year} by Ekaterina Uchaykina</p>
+          </div>
+
       </Card>
     </div>
   );

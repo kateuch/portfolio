@@ -1,28 +1,54 @@
-import style from "./Nav.module.css";
+import {Link}  from "react-scroll";
+import style from "./Nav.module.scss";
 
 const Nav = () => {
-  return (
-    <>
-      <div className={style.nav}>
+  return (    <nav className={style.nav}>
         <ul className={style.list}>
           <li>
-            <a href="">Home</a>
+            <Link activeClass="active"
+              to={"home"}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Home
+            </Link>
+          </li>
+          {/* <li>
+            <Link activeClass="active"
+              to={"About"}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>About</Link>
+          </li> */}
+          <li>
+            <Link activeClass="active"
+              to={"skills"}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>Skills</Link>
           </li>
           <li>
-            <a href="">About</a>
+            <Link activeClass="active"
+              to={"portfolio"}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>Portfolio</Link>
           </li>
           <li>
-            <a href="">Skills</a>
-          </li>
-          <li>
-            <a href="">Portfolio</a>
-          </li>
-          <li>
-            <a href="">Contacts</a>
+            <Link activeClass="active"
+              to={"contacts"}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>Contacts</Link>
           </li>
         </ul>
-      </div>
-    </>
+      </nav>
   );
 };
 

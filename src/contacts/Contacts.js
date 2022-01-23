@@ -5,7 +5,7 @@ import Title from '../common/components/Title/Title';
 
 const Contacts = () => {
     return (
-        <div className={style.contacts}>
+        <div className={style.contacts} id={'contacts'}>
         <Card className={style.contactsContainer}>
             <Title title={'Contact'}/>
             <Form />

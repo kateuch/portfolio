@@ -37,6 +37,7 @@ overflow: hidden;
     flex-direction: column;
     width: 100%;
     height: auto;
+    padding: 10px 15px;
 
     h3 {
       @include text(600, 18px, $textColor);

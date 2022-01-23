@@ -14,7 +14,7 @@ import img9 from "../assets/image/img-99.jpg";
 
 const Demo = () => {
   return (
-    <div className={style.demo}>
+    <div className={style.demo} id={'portfolio'}>
       <Card className={style.demoContainer}>
         <Title title={"Portfolio"} />
         <ul className={style.list}>

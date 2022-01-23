@@ -5,7 +5,7 @@ import Title from "../common/components/Title/Title";
 
 const SkillBox = () => {
   return (
-    <div className={style.skillbox}>
+    <div className={style.skillbox} id={'skills'}>
       <Card className={style.skillboxContainer}>
           <Title title={'Skills'}/>
           <div className={style.list}>
