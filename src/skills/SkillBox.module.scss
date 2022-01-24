@@ -3,22 +3,29 @@
 
 .skillbox {
   min-height: 50vh;
-  background-color: $firstBackgroundColor;
+  background-color: $secondBackgroundColor;
 
   .skillboxContainer {
     @include flexContainer();
+    justify-content: space-around;
     flex-wrap: wrap;
 
 
 
     .list {
       @include content();
-      justify-content: space-around;
-      gap: 7px;
+      // align-items: center;
+      // flex-direction: column;
+      justify-content: space-evenly;
+      padding: 50px 0;
+      gap: 25px;
       border: 0;
+      width: 60%;
       @media screen and (max-width: 774px) {
         justify-content: space-evenly;
       }
+
+
     }
   }
 }

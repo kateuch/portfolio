@@ -4,6 +4,7 @@
   width: 80%;
   // border: 1px solid;
   box-sizing: border-box;
+  overflow-x: visible;
 
   .inputBlock {
     width: 100%;
@@ -70,6 +71,7 @@
 height: auto;
 clear: both;
 float: left;
+padding-bottom:40px;
 .ibButton {
   @include text (400, 15px, #fff);
   font-family: "Mulish";
@@ -84,6 +86,7 @@ background-color: #000;
 padding: 9px 40px 14px;
 transition: all .3s ease;
 box-sizing: border-box;
+overflow: visible;
 &:hover {
   letter-spacing: 2px;
 }

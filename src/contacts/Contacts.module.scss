@@ -2,8 +2,8 @@
 @import "../common/styles/sass/mixins.scss";
 
 .contacts {
-  height: 100vh;
-  background-color: $firstBackgroundColor;
+  height: 80vh;
+  background-color: $secondBackgroundColor;
 
   .contactsContainer {
     @include flexContainer();

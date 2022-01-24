@@ -1,7 +1,7 @@
 import Card from "../common/components/Card/Card";
 import style from "./Footer.module.scss";
 
-const data = new Date;
+const data = new Date();
 const year = data.getFullYear();
 
 const Footer = () => {

@@ -2,8 +2,8 @@ import styles from "./Form.module.scss";
 
 const Form = () => {
   return (
-    <form className={styles.form}>
-        <div className={styles.inputBlock}>
+    <form className={styles.form} data-aos='fade-left'>
+        <div className={styles.inputBlock} >
       <ul >
         <li>
           <input type="text" id="name" placeholder="Name" />
@@ -16,8 +16,7 @@ const Form = () => {
       </li>
       </ul>
 </div>
-
-      <div className={styles.button}>
+      <div className={styles.button} >
         <button className={styles.ibButton}>Send Message</button>
       </div>
     </form>
