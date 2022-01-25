@@ -1,25 +1,25 @@
-import {useState} from 'react';
+import { useState, useEffect } from "react";
 import Nav from "../navigation/Nav";
 import style from "./Header.module.scss";
 
-
-
-
 const Header = () => {
+  // const [scrolling, setScrolling] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
 
-  const [scrollClass, setScrollClass] = useState(false);
+  useEffect(() => {
+    const onScroll = (e) => {
+      setScrollTop(e.target.documentElement.scrollTop);
+      // setScrolling(e.target.documentElement.scrollTop > scrollTop);
+    };
+    window.addEventListener("scroll", onScroll);
 
-const  handleScroll = () => {
-    console.log('scrolled')
-    // setScrollClass(true);
-
-    // setTimeout(() => {setScrollClass(false) }, 1000)
-  }
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollTop]);
 
   return (
-      <div className={`${scrollClass.length} ? ${style.header_fixed} : ${style.header}`} onScroll={ handleScroll}>
-        <Nav />
-      </div>
+    <div className={scrollTop > 0 ? style.header_fixed : style.header}>
+      <Nav />
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-import {useState} from 'react';
+// import {useState, useEffect} from 'react';
 import Card from "../common/components/Card/Card";
 import Title from "../common/components/Title/Title";
 import style from "./Demo.module.scss";
@@ -15,23 +15,13 @@ import img9 from "../assets/image/img-99.jpg";
 
 const Demo = () => {
 
-
-  const [scrollClass, setScrollClass] = useState(false);
-
-const  handleScroll = () => {
-    console.log('scrolled')
-    // setScrollClass(true);
-
-    // setTimeout(() => {setScrollClass(false) }, 1000)
-  }
-
   return (
-    <div className={style.demo} id={'portfolio'} onScroll={handleScroll}>
+    <div className={style.demo} id={'portfolio'} >
       <Card className={style.demoContainer}>
         <Title title={"Portfolio"} />
         <ul className={style.list}>
           <li>
-            <Project title={"1"} description={"description"} image={img1}/>
+            <Project title={"1"} description={"jjjjjjjjj"} image={img1}/>
           </li>
           <li>
             <Project title={"25555555555"} description={"description"} image={img4}/>

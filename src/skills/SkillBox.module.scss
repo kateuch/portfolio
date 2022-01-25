@@ -9,6 +9,7 @@
     @include flexContainer();
     justify-content: space-around;
     flex-wrap: wrap;
+    box-sizing: border-box;
 
 
 
@@ -22,7 +23,10 @@
       border: 0;
       width: 60%;
       @media screen and (max-width: 774px) {
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
+        padding: 0;
+        width: 90%;
+gap: 11px;
       }
 
 
