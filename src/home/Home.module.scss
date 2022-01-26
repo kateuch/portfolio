@@ -11,12 +11,10 @@
     align-items: center;
     overflow: hidden;
     box-sizing: border-box;
-    // padding-bottom: 20px;
 
     @media screen and (max-width: 850px) {
-      align-items: center;
+      align-items: flex-start;
       flex-direction: column;
-      padding-left: 15px;
     }
 
     .greatings {
@@ -26,7 +24,6 @@
       @media screen and (max-width: 850px) {
       width:100%;
       margin: 0;
-      // padding-left: 10px;
       }
 
       h3 {
@@ -38,6 +35,7 @@
           font-size: 37px;
           letter-spacing: .8px;
           margin-left: 0;
+          width: 70%;
         }
       }
       p {
@@ -79,8 +77,14 @@
       width: auto;
 
       @media screen and (max-width: 850px) {
+        width: 70%;
+        padding-bottom: 10px;
+
+      }
+      @media screen and (max-width: 480px) {
         width: 100%;
         padding-bottom: 10px;
+        margin: auto;
       }
 
       img {
@@ -93,9 +97,13 @@
         width: 70%;
         filter: grayscale(100%);
 
-        // @media screen and (max-width: 850px) {
-        //  paddin
-        // }
+        @media screen and (max-width: 850px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 480px) {
+          width: 80%;
+        }
 
       }
     }

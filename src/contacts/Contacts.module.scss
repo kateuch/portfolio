@@ -2,15 +2,20 @@
 @import "../common/styles/sass/mixins.scss";
 
 .contacts {
-  height: 80vh;
+  height: 100%;
   background-color: $secondBackgroundColor;
 
   .contactsContainer {
     @include flexContainer();
-    justify-content: space-evenly;
+
 
     @media screen and (max-width: 774px) {
       align-items: center;
+    }
+
+    .map {
+      width: 100%;
+      filter: grayscale(100%);
     }
   }
 }
