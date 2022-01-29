@@ -21,7 +21,7 @@ const Demo = () => {
         <Title title={"Portfolio"} />
         <ul className={style.list}>
           <li>
-            <Project title={"1"} description={"jjjjjjjjj"} image={img1}/>
+            <Project title={"1"} description={"jjjjjjjjj"} image={img1} />
           </li>
           <li>
             <Project title={"25555555555"} description={"description"} image={img4}/>

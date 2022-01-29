@@ -3,6 +3,7 @@
 
 .demo {
   background-color: $firstBackgroundColor;
+  box-sizing: border-box;
   .demoContainer {
     @include flexContainer();
     flex-wrap: nowrap;

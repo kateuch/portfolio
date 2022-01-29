@@ -28,7 +28,7 @@ const reset = () => {
   };
 
   return (
-    <form className={styles.form} onSubmit={sendEmail} data-aos='fade-left'>
+    <form className={styles.form} onSubmit={sendEmail} data-aos='fade-left' data-aos-delay='550'>
         <div className={styles.inputBlock} >
       <ul >
         <li>

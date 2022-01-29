@@ -17,7 +17,7 @@ const Header = () => {
   }, [scrollTop]);
 
   return (
-    <div className={scrollTop > 0 ? style.header_fixed : style.header}>
+    <div className={scrollTop > 0 ? style.header : style.header}>
       <Nav />
     </div>
   );

@@ -5,6 +5,7 @@ import Title from "../common/components/Title/Title";
 
 const SkillBox = () => {
 
+
   const skills = ['Javascript', 'CSS', 'Typescript',
   'Storybook', 'Jest', 'Material-UI',
   'Sass/Scss', 'React', 'Redux', 'Next.js', 'MongoDB' ]
@@ -13,24 +14,13 @@ const SkillBox = () => {
       <Card className={style.skillboxContainer}  >
        <Title title={'Skills'} />
 
-          <div className={style.list} data-aos='fade-up'>
+          <div className={style.list} data-aos='fade-up' data-aos-delay='900' >
             {skills.map((item, index) =>
               <div key={index}>
                 <Skill title={item}/>
               </div>
             )}
-          {/* <Skill title={'Javascript'}/>
-          <Skill title={"CSS"}/>
-          <Skill title={"Typescript"}/>
-          <Skill title={"Storybook"}/>
-          <Skill title={"Jest"}/>
-          <Skill title={"Material-UI"}/>
-          <Skill title={"Sass/Scss"}/>
-          <Skill title={"React"}/>
-          <Skill title={"Redux"}/>
-          <Skill title={"Next.js"}/>
-          <Skill title={"MongoDB"}/> */}
-          </div>
+           </div>
       </Card>
     </div>
   );

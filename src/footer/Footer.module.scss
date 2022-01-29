@@ -4,10 +4,11 @@
 .footer {
     min-height: 30%;
     background-color: #000 ;
-
+box-sizing: border-box;
 
     .footerContainer{
         text-align: center;
+        box-sizing: border-box;
 
         .copyright {
             @include text (400, 15px, #fff);

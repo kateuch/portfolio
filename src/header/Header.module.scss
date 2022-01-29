@@ -2,27 +2,43 @@
 @import '../common/styles/sass/mixins.scss';
 
 
-.header {
-    @include content();
-     width:100%;
-    height: 40px;
-    background-color: $secondBackgroundColor;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    z-index: 999;
-}
+// .header {
+//     @include content();
+//      width:100%;
+//     height: 40px;
+//     background-color: $firstBackgroundColor;
+//     align-items: center;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     justify-content: flex-end;
+//     z-index: 999 !important;
+//     top: 0;
+//     box-sizing: border-box;
+//     border: 0;
+//     transform: translateY(0);
+//     transform: translate3d(0, 0, 0);
+//     -webkit-transform: translate3d(0, 0, 0);
+//     -moz-transform: translate3d(0, 0, 0);
+//     transition: transform 0.3s ease;
+// }
 
-.header_fixed {
+.header{
     @include content();
      width:100%;
     height: 40px;
-    background-color: $secondBackgroundColor;
+    background-color: $firstBackgroundColor;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    position: fixed;
-    z-index: 999;
+    position: static;
+    z-index: 999 !important;
+    box-sizing: border-box;
+    top:0;
+    border: 1px solid red;
+//     transform: translateY(0);
+//     transform: translate3d(0, 0, 0);
+//     -webkit-transform: translate3d(0, 0, 0);
+//     -moz-transform: translate3d(0, 0, 0);
+//     transition: transform 0.3s ease
 }
