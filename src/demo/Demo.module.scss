@@ -30,15 +30,17 @@ flex-wrap: wrap;
         padding: 0;
       }
 
-      //7 img {
-        // background-position: top left;
-      // }
-
-  //     6 img {
-  //     background-position: 30%;
-  // background-position-x: 30%;
-  // background-position-y: center;
-  //     }
+      .img3 {
+        background-position-x: center;
+        @media screen and (min-width: 560px){
+        background-position-x: left;
+      }
+    }
+      .img8 {
+      background-position: 30%;
+  background-position-x: 30%;
+  background-position-y: center;
+      }
 
       li {
         // margin: 0 0 45px;
@@ -52,7 +54,9 @@ flex-wrap: wrap;
         list-style: none;
         margin: 0;
         padding: 0;
-
+        @media  screen and (max-width: 560px) {
+          width: 100%;
+        }
       }
     }
   }

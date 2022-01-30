@@ -5,7 +5,7 @@ import style from "./Demo.module.scss";
 import Project from "./Project";
 import img1 from "../assets/image/img-3.jpg";
 import img2 from "../assets/image/img-2.jpg";
-import img3 from "../assets/image/img-33.jpg";
+import img3 from "../assets/image/img-33-1.jpg";
 import img4 from "../assets/image/img-44.jpg";
 import img5 from "../assets/image/img-55.jpg";
 import img6 from "../assets/image/img-66.jpg";
@@ -38,7 +38,7 @@ const Demo = () => {
           <li>
             <Project title={"6"} description={"description"} image={img2}/>
           </li>
-          <li>
+          <li >
             <Project title={"7"} description={"description"} image={img3}/>
           </li>
           <li>

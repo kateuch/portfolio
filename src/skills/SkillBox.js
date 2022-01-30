@@ -14,7 +14,7 @@ const SkillBox = () => {
       <Card className={style.skillboxContainer}  >
        <Title title={'Skills'} />
 
-          <div className={style.list} data-aos='fade-up' data-aos-delay='900' >
+          <div className={style.list} data-aos='fade-up'  data-aos-duration='1200'>
             {skills.map((item, index) =>
               <div key={index}>
                 <Skill title={item}/>

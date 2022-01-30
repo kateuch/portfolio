@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Burger } from "../navigation/BurgerMenu/BurgerMenu";
 import Nav from "../navigation/Nav";
 import style from "./Header.module.scss";
 
@@ -18,6 +19,7 @@ const Header = () => {
 
   return (
     <div className={scrollTop > 0 ? style.header : style.header}>
+
       <Nav />
     </div>
   );

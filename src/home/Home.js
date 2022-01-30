@@ -5,13 +5,14 @@ import facebook from '../assets/image/fb.svg';
 import link from '../assets/image/linkedin.svg';
 import flickr from '../assets/image/flickr.svg';
 import tg from '../assets/image/tg.svg';
+import { Burger } from "../navigation/BurgerMenu/BurgerMenu";
 
 const Home = () => {
   return (
     <div className={style.home} id={'home'}>
       <Card className={style.homeContainer}>
         <div className={style.greatings}>
-          <h3>EKATERiNA UCHAYKiNA </h3>
+          <h3>EKATERINA UCHAYK<span className={style.letter}>i</span>NA </h3>
           <p>Frontend-developer based in Moscow</p>
           <div className={style.contactsBlock}>
 

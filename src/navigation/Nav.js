@@ -1,5 +1,6 @@
 import {Link}  from "react-scroll";
 import style from "./Nav.module.scss";
+import { Burger } from "./BurgerMenu/BurgerMenu";
 
 const Nav = () => {
   return (    <nav className={style.nav}>
@@ -24,7 +25,7 @@ const Nav = () => {
               duration={500}>About</Link>
           </li> */}
           <li>
-            <Link activeClass="active"
+            <Link activeClass={style.active}
               to={"skills"}
               spy={true}
               smooth={true}
@@ -32,7 +33,7 @@ const Nav = () => {
               duration={500}>Skills</Link>
           </li>
           <li>
-            <Link activeClass="active"
+            <Link activeClass={style.active}
               to={"portfolio"}
               spy={true}
               smooth={true}
@@ -40,7 +41,7 @@ const Nav = () => {
               duration={500}>Portfolio</Link>
           </li>
           <li>
-            <Link activeClass="active"
+            <Link activeClass={style.active}
               to={"contacts"}
               spy={true}
               smooth={true}
@@ -48,6 +49,7 @@ const Nav = () => {
               duration={500}>Contacts</Link>
           </li>
         </ul>
+        <Burger/>
       </nav>
   );
 };
