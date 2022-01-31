@@ -12,13 +12,9 @@ body {
   @include text(400, 15px, #767676);
   line-height: 30px;
   font-family: "Mulish";
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 
 h1,
 h2,

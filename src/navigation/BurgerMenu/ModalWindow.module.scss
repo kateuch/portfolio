@@ -1,10 +1,37 @@
-
+@import "../../common/styles/sass/mixins.scss";
+@import "../../common/styles/sass/variables.scss";
 
 .window {
-    z-index: 9999;
-position: fixed;
-width: 300px;
-height: 100vh;
-top: 0;
-left: 0;
+  text-transform: uppercase;
+  padding-top: 50px;
+  z-index: 9999;
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  border: 2px solid brown;
+  background-color: #080a0a;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+}
+.title {
+  @include text(800, 28px, #b4bdbf);
+  letter-spacing: 1.2px;
+}
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  cursor: pointer;
+}
+.active {
+  @include text(800px, 16px, #b4bdbf);
+}
+.notActive {
+  transition: transform 0.5s ease-in;
+  transform: translateX(-100%);
 }

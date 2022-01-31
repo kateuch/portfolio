@@ -21,10 +21,10 @@ const Demo = () => {
         <Title title={"Portfolio"} />
         <ul className={style.list}>
           <li>
-            <Project title={"1"} description={"jjjjjjjjj"} image={img1} />
+            <Project title={"Todolist"} description={"TS, Redux, RestAPI, Thunk,Material UI, Unit Tests"} image={img1} url={'https://github.com/kateuch/Todolist-TS'}/>
           </li>
           <li>
-            <Project title={"25555555555"} description={"description"} image={img4}/>
+            <Project title={"Simle Counter"} description={"HTML, CSS, React(hooks)"} image={img4} url={"http://kateuch.github.io/counter"}/>
           </li>
           <li>
             <Project title={"3"} description={"description"} image={img7}/>

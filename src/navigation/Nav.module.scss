@@ -2,13 +2,13 @@
 @import "../common/styles/sass/variables.scss";
 
 .nav {
-  width:100%;
+  width: 100%;
   height: 40px;
   // border: 1px solid;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-position: fixed;
+  position: fixed;
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -20,8 +20,12 @@ position: fixed;
     margin: 0;
     list-style-type: none;
     transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+
+    @media screen and (max-width: 564px) {
+      display: none;
+    }
 
     li {
       margin: 0 30px 0 0;

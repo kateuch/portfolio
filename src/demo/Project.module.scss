@@ -87,11 +87,12 @@
       }
     }
     span {
-      @include text(500, 15px, $textColor);
-      line-height: 30px;
+      @include text(200, 15px, $textColor);
+      font-family: 'Mulish', sans-serif;
+      line-height: 1.4;
       word-wrap: break-word;
       @media screen and (max-width: 480px) {
-        line-height: 1;
+        line-height: 1.4;
         font-size: 13px;
         // margin: 10px 0;
       }

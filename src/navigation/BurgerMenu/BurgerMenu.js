@@ -1,19 +1,26 @@
-import {useState} from 'react';
-import style from './BurgerMenu.module.scss';
-
+import { useContext } from "react";
+import { ModalMenuContext } from "../../common/components/context/modalMenu-context";
+import style from "./BurgerMenu.module.scss";
 
 export const Burger = () => {
+  const modalCtx = useContext(ModalMenuContext);
 
-    const [active, setActive] = useState(false);
+  const active = modalCtx.isActive;
 
-    return (
-        <>
-        <div className={`${style.burger} ${active ? style.burgerActive : ''}`} onClick={() => setActive(!active)}>
-            <div className={`${style.line} ${style.line1}`}></div>
-            <div className={`${style.line} ${style.line2}`}></div>
-            <div className={`${style.line} ${style.line3}`}></div>
-        </div>
-        </>
-    )
-}
+  const activeHandler = () => {
+    modalCtx.getActive();
+  };
 
+  return (
+    <>
+      <div
+        className={`${style.burger} ${active ? style.burgerActive : ""}`}
+        onClick={activeHandler}
+      >
+        <div className={`${style.line} ${style.line1}`}></div>
+        <div className={`${style.line} ${style.line2}`}></div>
+        <div className={`${style.line} ${style.line3}`}></div>
+      </div>
+    </>
+  );
+};

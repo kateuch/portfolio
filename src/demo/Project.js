@@ -8,7 +8,7 @@ const Project = (props) => {
         <div className={style.overlay}>
           <div className={style.title}>
             <h3>
-              <a href="">{props.title}</a>
+              <a href={props.url}>{props.title}</a>
             </h3>
             <span className={style.description}>{props.description}</span>
 

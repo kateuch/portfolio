@@ -13,27 +13,18 @@
     flex-wrap: wrap;
     box-sizing: border-box;
 
-
-
     .list {
       @include content();
-      // align-items: center;
-      // flex-direction: column;
       justify-content: space-evenly;
-      // padding: 50px 0;
       gap: 25px;
       border: 0;
       width: 60%;
       margin: 40px 0;
       @media screen and (max-width: 774px) {
-        // justify-content: space-evenly;
         margin: 0;
-        // padding: 0;
         width: 90%;
-gap: 11px;
+        gap: 11px;
       }
-
-
     }
   }
 }
